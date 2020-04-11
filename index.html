@@ -3,14 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Colby College</title>
+        <title>Colby College Developer Pages</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <style>
+            body,
+            .row:nth-child(2) {
+                margin-top: 1rem;
+            }
+        </style>
     </head>
     <body>
-        <main>
-            <ul>
-                <li><a href="examples.html">Component Library Examples</a></li>
-                <li><a href="https://docs.webteam.colby.edu/">Developer Documentation</a></li>
-            </ul>
-        </main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><h1>Colby College Developer Pages</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="examples.html"
+                        ><div class="shadow-sm p-3 mb-5 bg-white rounded border text-center">
+                            Component Library Examples
+                        </div></a
+                    >
+                </div>
+                <div class="col-sm">
+                    <a href="https://docs.webteam.colby.edu/"
+                        ><div class="shadow-sm p-3 mb-5 bg-white rounded border text-center">
+                            Developer Documentation
+                        </div></a
+                    >
+                </div>
+            </div>
+        </div>
     </body>
 </html>
