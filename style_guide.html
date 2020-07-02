@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Colby College Developer Pages</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <style>
+            .row:nth-child(2) {
+                margin-top: 2rem;
+            }
+            .franklin-gothic-example {
+                font-size: 2.5rem;
+                font-family: franklin-gothic-urw, sans-serif;
+                font-style: normal;
+                font-weight: 300;
+            }
+
+            .open-sans-example {
+                font-size: 2.5rem;
+                font-family: open-sans, sans-serif;
+                font-style: normal;
+                font-weight: 300;
+            }
+            .swatches {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                align-items: stretch;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .swatch {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+                border: 1px solid #ccc;
+                /* padding: 1em; */
+                border-radius: 0;
+                margin-bottom: 20px;
+                background-color: #fff;
+                overflow: hidden;
+            }
+
+            .swatch .color {
+                position: relative;
+                padding-top: calc(100% + 1em);
+                /* margin: -1em -1em 0.8em; */
+                width: calc(100% + 2em);
+                border-bottom: 0 solid #ccc;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .swatch .color {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                margin-bottom: 0;
+            }
+
+            .swatch .color p {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                font-size: 1.25em;
+                overflow: hidden;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            .swatch .values {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 1rem;
+            }
+            .colby-blue .color {
+                background-color: #002878;
+                color: #fff;
+            }
+            .orange .color {
+                background-color: #d95900;
+                color: #fff;
+            }
+            .warm-gray .color {
+                background-color: #e3d7d1;
+                color: #000;
+            }
+            .white .color {
+                border-bottom: 1px solid #ccc;
+                background-color: #fff;
+                color: #000;
+            }
+            .light-blue .color {
+                background-color: #b7d4f1;
+                color: #000;
+            }
+            .gold .color {
+                background-color: #f1bd5b;
+                color: #000;
+            }
+            .black .color {
+                background-color: #000;
+                color: #fff;
+            }
+            .green .color {
+                background-color: #428d50;
+                color: #fff;
+            }
+            .purple .color {
+                background-color: #693e92;
+                color: #fff;
+            }
+        </style>
+        <link rel="stylesheet" href="https://use.typekit.net/djf7stt.css" />
+    </head>
+    <body>
+        <nav aria-label="breadcrumb" style="background-color: #e9ecef;">
+            <div class="container">
+                <ol class="breadcrumb" style="padding: 0.75rem 0;">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Web Style Guide</li>
+                </ol>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><h1>Web Style Guide</h1></div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm-12">
+                    <p class="lead">
+                        This guide will introduce you to design practices used on colby.edu. Using
+                        these design elements will make adding content easier and will keep the look
+                        and functionality of the site consistent with Colby’s branding guidelines.
+                    </p>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-sm-12 mb-2">
+                    <h2>Typefaces</h2>
+                </div>
+                <div class="col-sm-12">
+                    <p class="lead">
+                        Two typefaces are used on colby.edu. <b>Franklin Gothic</b> is the primary
+                        font family and is used for most text and small headlines on the site.
+                        <b>Open Sans</b>
+                        is a clean, simple typeface, used for larger headlines and special projects.
+                        Both typefaces appear similar when first viewed. However, where and how they
+                        are used on the page can noticeably change the appearance of the site. On
+                        the Colby web, various font weights and sizes of each typeface are used for
+                        different levels of headers, paragraphs of text, lists, captions, and so
+                        forth. Examples of typeface usage are shown in this guide.
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <div>
+                        <p style="font-size: 1rem; margin-bottom: 0; font-weight: bold;">
+                            Franklin Gothic URW
+                        </p>
+                        <span class="text-muted franklin-gothic-example"
+                            >The quick fox jumped over the lazy dog.</span
+                        >
+                    </div>
+                    <div class="mt-2">
+                        <p style="font-size: 1rem; margin-bottom: 0; font-weight: bold;">
+                            Open Sans
+                        </p>
+                        <span class="text-muted open-sans-example"
+                            >The quick fox jumped over the lazy dog.</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12 mb-2 pt-4">
+                    <h2>Colors</h2>
+                </div>
+                <div class="col-sm-12">
+                    <p class="lead">
+                        The color palette for the Colby site is limited to the following colors. The
+                        palette is grounded in blue and balanced by a range of grays and light
+                        blue-grays. The colors are intentionally subdued in saturation and contrast,
+                        allowing imagery on the site to stand out and reducing visual noise.
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-12 mb-2 text-center">
+                    <h3>Primary Colors</h3>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3">
+                    <div class="swatch colby-blue">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Colby Blue</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>0,40,120</dd>
+                                <dt>Hex:</dt>
+                                <dd>#002878</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="swatch warm-gray">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Warm Gray</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>227,215,209</dd>
+                                <dt>Hex:</dt>
+                                <dd>#e3d7d1</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="swatch white">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">White</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>255,255,255</dd>
+                                <dt>Hex:</dt>
+                                <dd>#ffffff</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="swatch black">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Black</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>0,0,0</dd>
+                                <dt>Hex:</dt>
+                                <dd>#000000</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 mt-4">
+                <div class="col-sm-12 mb-2 text-center">
+                    <h3>Secondary Colors</h3>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="swatch orange">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Orange</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>217,89,0</dd>
+                                <dt>Hex:</dt>
+                                <dd>#d95900</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="swatch light-blue">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Light Blue</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>183,212,241</dd>
+                                <dt>Hex:</dt>
+                                <dd>#b7d4f1</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="swatch green">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Green</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>66,141,80</dd>
+                                <dt>Hex:</dt>
+                                <dd>#428d50</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="swatch gold">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Gold</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>66,141,80</dd>
+                                <dt>Hex:</dt>
+                                <dd>#f1bd5b</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="swatch purple">
+                        <div class="color">
+                            <p style="margin-bottom: 0;">Purple</p>
+                        </div>
+                        <div class="values">
+                            <dl>
+                                <dt>RGB:</dt>
+                                <dd>105,62,146</dd>
+                                <dt>Hex:</dt>
+                                <dd>#693e92</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
