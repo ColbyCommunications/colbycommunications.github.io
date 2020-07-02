@@ -31,14 +31,14 @@
             }
             .franklin-gothic-example {
                 font-size: 2.5rem;
-                font-family: franklin-gothic-urw, sans-serif;
+                font-family: franklin-gothic-urw-cond, sans-serif;
                 font-style: normal;
                 font-weight: 300;
             }
 
-            .open-sans-example {
+            .roboto-example {
                 font-size: 2.5rem;
-                font-family: open-sans, sans-serif;
+                font-family: roboto, sans-serif;
                 font-style: normal;
                 font-weight: 300;
             }
@@ -109,11 +109,11 @@
                 color: #fff;
             }
             .orange .color {
-                background-color: #d95900;
+                background-color: #e15634;
                 color: #fff;
             }
             .warm-gray .color {
-                background-color: #e3d7d1;
+                background-color: #b5afad;
                 color: #000;
             }
             .white .color {
@@ -139,6 +139,10 @@
             }
             .purple .color {
                 background-color: #693e92;
+                color: #fff;
+            }
+            .body-copy .color {
+                background-color: #333;
                 color: #fff;
             }
 
@@ -185,10 +189,10 @@
                 </div>
                 <div class="col-sm-12">
                     <p>
-                        Two typefaces are used on the Colby web. <b>Franklin Gothic</b> is the
-                        primary font family and is used for most text and small headlines on the
-                        site.
-                        <b>Open Sans</b>
+                        Two typefaces are used on the Colby web.
+                        <b>Franklin Gothic URW Condensed</b> is the primary font family and is used
+                        for most text and small headlines on the site.
+                        <b>Roboto</b>
                         is a clean, simple typeface, used for larger headlines and special projects.
                         Both typefaces appear similar when first viewed. However, where and how they
                         are used on the page can noticeably change the appearance of the site. On
@@ -200,7 +204,7 @@
                 <div class="col-sm-12">
                     <div>
                         <p style="font-size: 1rem; margin-bottom: 0; font-weight: bold;">
-                            Franklin Gothic URW
+                            Franklin Gothic URW Condensed
                         </p>
                         <span class="text-muted franklin-gothic-example"
                             >The quick fox jumped over the lazy dog.</span
@@ -208,9 +212,9 @@
                     </div>
                     <div class="mt-2">
                         <p style="font-size: 1rem; margin-bottom: 0; font-weight: bold;">
-                            Open Sans
+                            Roboto
                         </p>
-                        <span class="text-muted open-sans-example"
+                        <span class="text-muted roboto-example"
                             >The quick fox jumped over the lazy dog.</span
                         >
                     </div>
@@ -261,8 +265,8 @@
                                     </p>
                                     <figure class="highlight">
                                         <pre>
-                                            <code>
-                                                font-family: franklin-gothic-urw, sans-serif;
+                                            <code class="language-html">
+                                                font-family: franklin-gothic-urw-cond, sans-serif;
                                                 font-style: normal;
                                                 font-weight: 300;
                                             </code>
@@ -321,9 +325,9 @@
                         <div class="values">
                             <dl>
                                 <dt>RGB:</dt>
-                                <dd>227,215,209</dd>
+                                <dd>181,175,173</dd>
                                 <dt>Hex:</dt>
-                                <dd>#e3d7d1</dd>
+                                <dd>#B5AFAD</dd>
                             </dl>
                         </div>
                     </div>
@@ -361,82 +365,41 @@
             </div>
             <div class="row mb-2 mt-4">
                 <div class="col-sm-12 mb-2 text-center">
-                    <h3>Secondary Colors</h3>
+                    <h3>Secondary/Accent Colors</h3>
                 </div>
             </div>
             <div class="row mb-2">
-                <div class="col">
+                <div class="col-md-3">
                     <div class="swatch orange">
                         <div class="color">
-                            <p style="margin-bottom: 0;">Orange</p>
+                            <p style="margin-bottom: 0;">Warm Red</p>
                         </div>
                         <div class="values">
                             <dl>
                                 <dt>RGB:</dt>
-                                <dd>217,89,0</dd>
+                                <dd>225,86,52</dd>
                                 <dt>Hex:</dt>
-                                <dd>#d95900</dd>
+                                <dd>#E15634</dd>
                             </dl>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="swatch light-blue">
-                        <div class="color">
-                            <p style="margin-bottom: 0;">Light Blue</p>
-                        </div>
-                        <div class="values">
-                            <dl>
-                                <dt>RGB:</dt>
-                                <dd>183,212,241</dd>
-                                <dt>Hex:</dt>
-                                <dd>#b7d4f1</dd>
-                            </dl>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="display: flex;">
+                        <div style="margin-right: 20px;"><h3>Body Copy</h3></div>
+                        <div style="padding: 0.01em 16px; background-color: #333; color: #fff;">
+                            <p>#333</p>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="swatch green">
-                        <div class="color">
-                            <p style="margin-bottom: 0;">Green</p>
+                    <div style="display: flex;">
+                        <div style="margin-right: 20px;">
+                            <h3>Display Text (headers, pull quotes, etc)</h3>
                         </div>
-                        <div class="values">
-                            <dl>
-                                <dt>RGB:</dt>
-                                <dd>66,141,80</dd>
-                                <dt>Hex:</dt>
-                                <dd>#428d50</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="swatch gold">
-                        <div class="color">
-                            <p style="margin-bottom: 0;">Gold</p>
-                        </div>
-                        <div class="values">
-                            <dl>
-                                <dt>RGB:</dt>
-                                <dd>241,189,91</dd>
-                                <dt>Hex:</dt>
-                                <dd>#f1bd5b</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="swatch purple">
-                        <div class="color">
-                            <p style="margin-bottom: 0;">Purple</p>
-                        </div>
-                        <div class="values">
-                            <dl>
-                                <dt>RGB:</dt>
-                                <dd>105,62,146</dd>
-                                <dt>Hex:</dt>
-                                <dd>#693e92</dd>
-                            </dl>
+                        <div style="padding: 0.01em 16px; background-color: #002878; color: #fff;">
+                            <p>#002878</p>
                         </div>
                     </div>
                 </div>
