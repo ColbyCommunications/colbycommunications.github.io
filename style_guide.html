@@ -10,6 +10,21 @@
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"
         />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
         <style>
             .row:nth-child(2) {
                 margin-top: 2rem;
@@ -126,6 +141,19 @@
                 background-color: #693e92;
                 color: #fff;
             }
+
+            .highlight {
+                padding: 1rem;
+                background-color: #f8f9fa;
+            }
+
+            .highlight pre {
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                background-color: transparent;
+                border: 0;
+            }
         </style>
         <link rel="stylesheet" href="https://use.typekit.net/djf7stt.css" />
     </head>
@@ -153,10 +181,10 @@
             </div>
             <div class="row pb-4">
                 <div class="col-sm-12 mb-2">
-                    <h2>Typefaces</h2>
+                    <h2>Typefaces and Adobe Typekit</h2>
                 </div>
                 <div class="col-sm-12">
-                    <p class="lead">
+                    <p>
                         Two typefaces are used on the Colby web. <b>Franklin Gothic</b> is the
                         primary font family and is used for most text and small headlines on the
                         site.
@@ -185,6 +213,68 @@
                         <span class="text-muted open-sans-example"
                             >The quick fox jumped over the lazy dog.</span
                         >
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-4">
+                    <p>
+                        We use <b>Adobe Typekit</b> for web fonts. To use a typekit for web
+                        development, please contact Colby Communicaitons or
+                        <a href="mailto:webmaster@colby.edu">webmaster@colby.edu</a>.
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="collapseOne"
+                                    >
+                                        Adobe Typekit Usage
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div
+                                id="collapseOne"
+                                class="collapse"
+                                aria-labelledby="headingOne"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body">
+                                    <p>Add the following link to the head of your HTML document:</p>
+                                    <figure class="highlight">
+                                        <pre>
+                                            <code>
+                                                &lt;link rel="stylesheet" href="https://use.typekit.net/xxxxxx.css"&gt;
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p>
+                                        Add the following (or similar) to your CSS or SCSS
+                                        stylesheet:
+                                    </p>
+                                    <figure class="highlight">
+                                        <pre>
+                                            <code>
+                                                font-family: franklin-gothic-urw, sans-serif;
+                                                font-style: normal;
+                                                font-weight: 300;
+                                            </code>
+                                        </pre>
+                                    </figure>
+                                    <p>
+                                        You can change the <code>font-weight</code> and
+                                        <code>font-style</code> as needed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
